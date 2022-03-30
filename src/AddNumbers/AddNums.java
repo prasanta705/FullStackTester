@@ -7,7 +7,7 @@ public class AddNums {
 		 {
 				int a=10;
 				int b=20;
-				int c=30;
+				int c=40;
 				int sum = a + b + c;
 				
 		        System.out.println(sum);
