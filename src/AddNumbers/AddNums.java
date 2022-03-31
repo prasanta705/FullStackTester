@@ -13,7 +13,7 @@ public class AddNums {
 				 System.out.println(sum);
 				 
 				int d=50;
-				int e=60;
+				int e=65;
 				int sum1 = d + e;
 				
 		        System.out.println(sum1);
