@@ -10,7 +10,13 @@ public class AddNums {
 				int c=30;
 				int sum = a + b + c;
 				
-		        System.out.println(sum);
+				 System.out.println(sum);
+				 
+				int d=50;
+				int e=60;
+				int sum1 = d + e;
+				
+		        System.out.println(sum1);
 		    }
 
 	}
