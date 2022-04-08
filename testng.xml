@@ -6,6 +6,8 @@
    <test name="MyTests" >
        <classes> 
            <class name="com.test.Scenario1" />
+           <class name="com.test.Scenario2" />
+           <class name="com.test.Scenario3" />
        </classes>
    </test>
  </suite>

@@ -18,6 +18,13 @@ public class SelectProductPage {
 		//PageFactory.initElements(driver, this);
 	}
 	
+	
+	@FindBy(xpath = "//select[@class='product_sort_container']")
+	public WebElement Sort;	
+	
+	@FindBy(xpath = "//option[@value='lohi']")
+	public WebElement SortLowtohigh;	
+	
 
 	@FindBy(xpath = "//button[contains(@id, 'add-to-cart-sauce-labs-backpack')]")
 	public WebElement Backpack;	
@@ -29,8 +36,15 @@ public class SelectProductPage {
 	public WebElement Bikelight;	
 	
 	@FindBy(xpath = "//div[(@id= 'shopping_cart_container')]")
-	public WebElement Cart;	
-
+	public WebElement Cart;
+	
+	@FindBy(xpath = "//button[(@id= 'remove-sauce-labs-backpack')]")
+	public WebElement Removebackpack;
+	
+	@FindBy(xpath = "//button[(@id= 'remove-sauce-labs-bolt-t-shirt')]")
+	public WebElement Removetshirt;
+	
+	
 	public void select_Backpack() {
 	
 		Backpack.click();
@@ -50,5 +64,25 @@ public class SelectProductPage {
 	public void click_Cart() {
 		
 		Cart.click();
+	}
+	
+	public void Remove_backpack() {
+		
+		Removebackpack.click();
+	}
+	
+	public void Remove_tshirt() {
+		
+		Removetshirt.click();
+	}
+	
+	public void Sort_item() {
+		
+		Sort.click();
+	}
+	
+	public void Sort_lowtohigh() {
+		
+		SortLowtohigh.click();
 	}
 }
