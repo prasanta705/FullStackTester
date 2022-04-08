@@ -1,40 +1,90 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="2" total="5" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-04-08T20:58:02 IST" name="Default suite" finished-at="2022-04-08T20:58:12 IST" duration-ms="9377">
+  <suite started-at="2022-04-08T21:04:37 IST" name="Test-Suite" finished-at="2022-04-08T21:04:54 IST" duration-ms="16654">
     <groups>
     </groups>
-    <test started-at="2022-04-08T20:58:02 IST" name="Default test" finished-at="2022-04-08T20:58:12 IST" duration-ms="9377">
+    <test started-at="2022-04-08T21:04:37 IST" name="MyTests" finished-at="2022-04-08T21:04:54 IST" duration-ms="16654">
       <class name="com.test.Scenario3">
-        <test-method is-config="true" signature="setUpEnv()[pri:0, instance:com.test.Scenario3@53fdffa1]" started-at="2022-04-08T20:58:02 IST" name="setUpEnv" finished-at="2022-04-08T20:58:02 IST" duration-ms="6" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpEnv -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.test.Scenario3@53fdffa1]" started-at="2022-04-08T20:58:02 IST" name="setUp" finished-at="2022-04-08T20:58:05 IST" duration-ms="3105" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.test.Scenario3@56cdfb3b]" started-at="2022-04-08T21:04:45 IST" name="setUp" finished-at="2022-04-08T21:04:48 IST" duration-ms="2318" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="select_product()[pri:0, instance:com.test.Scenario3@53fdffa1]" started-at="2022-04-08T20:58:05 IST" name="select_product" finished-at="2022-04-08T20:58:11 IST" duration-ms="6062" status="PASS">
+        <test-method signature="select_product()[pri:0, instance:com.test.Scenario3@56cdfb3b]" started-at="2022-04-08T21:04:48 IST" name="select_product" finished-at="2022-04-08T21:04:54 IST" duration-ms="6099" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- select_product -->
-        <test-method is-config="true" signature="FailedTestCases(org.testng.ITestResult)[pri:0, instance:com.test.Scenario3@53fdffa1]" started-at="2022-04-08T20:58:11 IST" name="FailedTestCases" finished-at="2022-04-08T20:58:11 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="FailedTestCases(org.testng.ITestResult)[pri:0, instance:com.test.Scenario3@56cdfb3b]" started-at="2022-04-08T21:04:54 IST" name="FailedTestCases" finished-at="2022-04-08T21:04:54 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=select_product status=SUCCESS method=Scenario3.select_product()[pri:0, instance:com.test.Scenario3@53fdffa1] output={null}]]]>
+                <![CDATA[[TestResult name=select_product status=SUCCESS method=Scenario3.select_product()[pri:0, instance:com.test.Scenario3@56cdfb3b] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FailedTestCases -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.test.Scenario3@53fdffa1]" started-at="2022-04-08T20:58:11 IST" name="tearDown" finished-at="2022-04-08T20:58:12 IST" duration-ms="182" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.test.Scenario3@56cdfb3b]" started-at="2022-04-08T21:04:54 IST" name="tearDown" finished-at="2022-04-08T21:04:54 IST" duration-ms="209" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.test.Scenario3 -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="com.test.Scenario1">
+        <test-method is-config="true" signature="setUpEnv()[pri:0, instance:com.test.Scenario1@4d0f2471]" started-at="2022-04-08T21:04:37 IST" name="setUpEnv" finished-at="2022-04-08T21:04:37 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpEnv -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.test.Scenario1@4d0f2471]" started-at="2022-04-08T21:04:37 IST" name="setUp" finished-at="2022-04-08T21:04:40 IST" duration-ms="2825" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="select_product()[pri:0, instance:com.test.Scenario1@4d0f2471]" started-at="2022-04-08T21:04:40 IST" name="select_product" finished-at="2022-04-08T21:04:41 IST" duration-ms="1021" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- select_product -->
+        <test-method is-config="true" signature="FailedTestCases(org.testng.ITestResult)[pri:0, instance:com.test.Scenario1@4d0f2471]" started-at="2022-04-08T21:04:41 IST" name="FailedTestCases" finished-at="2022-04-08T21:04:41 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=select_product status=SUCCESS method=Scenario1.select_product()[pri:0, instance:com.test.Scenario1@4d0f2471] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FailedTestCases -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.test.Scenario1@4d0f2471]" started-at="2022-04-08T21:04:41 IST" name="tearDown" finished-at="2022-04-08T21:04:41 IST" duration-ms="214" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.test.Scenario1 -->
+      <class name="com.test.Scenario2">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.test.Scenario2@4229bb3f]" started-at="2022-04-08T21:04:41 IST" name="setUp" finished-at="2022-04-08T21:04:44 IST" duration-ms="2767" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="select_product()[pri:0, instance:com.test.Scenario2@4229bb3f]" started-at="2022-04-08T21:04:44 IST" name="select_product" finished-at="2022-04-08T21:04:45 IST" duration-ms="995" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- select_product -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.test.Scenario2@4229bb3f]" started-at="2022-04-08T21:04:45 IST" name="tearDown" finished-at="2022-04-08T21:04:45 IST" duration-ms="160" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="FailedTestCases(org.testng.ITestResult)[pri:0, instance:com.test.Scenario2@4229bb3f]" started-at="2022-04-08T21:04:45 IST" name="FailedTestCases" finished-at="2022-04-08T21:04:45 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=select_product status=SUCCESS method=Scenario2.select_product()[pri:0, instance:com.test.Scenario2@4229bb3f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FailedTestCases -->
+      </class> <!-- com.test.Scenario2 -->
+    </test> <!-- MyTests -->
+  </suite> <!-- Test-Suite -->
 </testng-results>
