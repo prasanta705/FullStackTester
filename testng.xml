@@ -5,8 +5,7 @@
 	</listeners>
    <test name="MyTests" >
        <classes> 
-          <class name="com.test.RegistrationTest" />
-          <class name="com.test.ReservationTest" />
+           <class name="com.test.Scenario1" />
        </classes>
    </test>
  </suite>
