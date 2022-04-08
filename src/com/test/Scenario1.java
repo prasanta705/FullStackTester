@@ -10,12 +10,10 @@ import com.base.BaseClass;
 import com.pages.ChkOutOverviewPage;
 import com.pages.ChkOutYourInfoPage;
 import com.pages.CompletePage;
-import com.pages.HomePage;
 import com.pages.LoginPage;
 import com.pages.SelectProductPage;
 import com.pages.YourCartPage;
-import com.pages.RegistrationPages.RegistrationPage;
-import com.pages.RegistrationPages.RegistrationSuccess;
+
 
 public class Scenario1 extends BaseClass {
 
