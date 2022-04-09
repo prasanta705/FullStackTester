@@ -1,8 +1,13 @@
 package com.test;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -62,6 +67,16 @@ public class Scenario2 extends BaseClass {
 		confirmation.Validate_headermsg();
 		
 		confirmation.Validate_orderconfirmationmsg();
+		
+		TakesScreenshot scrShot = ((TakesScreenshot) driver);
+		File SrcFile = scrShot.getScreenshotAs(OutputType.FILE);
+		File DestFile = new File(".//ScreenShots//Scenario-2.png");
+		try {
+			FileUtils.copyFile(SrcFile, DestFile);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		
 		 //Assert.assertTrue(regSuccess.successMessage.isDisplayed());
 		//Assert.assertTrue(false);
