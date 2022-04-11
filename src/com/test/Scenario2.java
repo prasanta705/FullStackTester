@@ -23,7 +23,7 @@ import com.pages.YourCartPage;
 public class Scenario2 extends BaseClass {
 
 	@Test
-	public void select_product() {
+	public void Scenario_2() {
 		
 		LoginPage login = PageFactory.initElements(driver, LoginPage.class);
 		SelectProductPage selectproduct = PageFactory.initElements(driver, SelectProductPage.class);
