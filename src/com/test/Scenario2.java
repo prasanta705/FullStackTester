@@ -11,6 +11,9 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
+import com.assertthat.selenium_shutterbug.core.Capture;
+import com.assertthat.selenium_shutterbug.core.Shutterbug;
 import com.base.BaseClass;
 import com.pages.ChkOutOverviewPage;
 import com.pages.ChkOutYourInfoPage;
@@ -68,15 +71,8 @@ public class Scenario2 extends BaseClass {
 		
 		confirmation.Validate_orderconfirmationmsg();
 		
-		TakesScreenshot scrShot = ((TakesScreenshot) driver);
-		File SrcFile = scrShot.getScreenshotAs(OutputType.FILE);
-		File DestFile = new File(".//ScreenShots//Scenario-2.png");
-		try {
-			FileUtils.copyFile(SrcFile, DestFile);
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		Shutterbug.shootPage(driver, Capture.FULL_SCROLL).save();
+		Shutterbug.shootPage(driver).save("Path");
 		
 		 //Assert.assertTrue(regSuccess.successMessage.isDisplayed());
 		//Assert.assertTrue(false);
