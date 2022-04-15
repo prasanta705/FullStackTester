@@ -19,13 +19,13 @@ public class RestAssured_Assignment {
 	@Test
 	public void postOrder() throws FileNotFoundException, IOException, ParseException {
 		
-	    JSONObject obj1 = new JSONObject();
-        obj1.put("clientName", "TestShop8");
-        obj1.put("clientEmail", "TestShop8@gmail.com");
+	    JSONObject RegisterClient  = new JSONObject();
+	    RegisterClient.put("clientName", "TestShop10");
+	    RegisterClient.put("clientEmail", "TestShop10@gmail.com");
         
         Response response = given()
         		.contentType("application/json; charset=UTF-16")
-        		.body(obj1)
+        		.body(RegisterClient)
         		.post("https://simple-tool-rental-api.glitch.me/api-clients")
         		.then()
         		.statusCode(201)
@@ -42,14 +42,14 @@ public class RestAssured_Assignment {
 		
 		System.out.println(toolid);
 		
-	    JSONObject obj = new JSONObject();
-        obj.put("toolId", toolid);
-        obj.put("customerName", "John Doe");
+	    JSONObject CreateOrder = new JSONObject();
+	    CreateOrder.put("toolId", toolid);
+	    CreateOrder.put("customerName", "John Doe");
           
         given()
         .header("Authorization", "Bearer " + readMethod(response).get("accessToken"))
                 .contentType("application/json; charset=UTF-16")
-                .body(obj)
+                .body(CreateOrder)
                 .post("https://simple-tool-rental-api.glitch.me/orders")
                 .then().statusCode(201);
 		
