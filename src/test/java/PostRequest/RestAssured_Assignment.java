@@ -20,8 +20,8 @@ public class RestAssured_Assignment {
 	public void postOrder() throws FileNotFoundException, IOException, ParseException {
 		
 	    JSONObject RegisterClient  = new JSONObject();
-	    RegisterClient.put("clientName", "TestShop10");
-	    RegisterClient.put("clientEmail", "TestShop10@gmail.com");
+	    RegisterClient.put("clientName", "TestShop12");
+	    RegisterClient.put("clientEmail", "TestShop12@gmail.com");
         
         Response response = given()
         		.contentType("application/json; charset=UTF-16")
