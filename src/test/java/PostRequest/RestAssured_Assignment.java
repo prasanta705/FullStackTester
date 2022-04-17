@@ -51,7 +51,7 @@ public class RestAssured_Assignment {
                 .contentType("application/json; charset=UTF-16")
                 .body(CreateOrder)
                 .post("https://simple-tool-rental-api.glitch.me/orders")
-                .then().statusCode(201);
+                .then().statusCode(201).log().all();
 		
 	}
 
