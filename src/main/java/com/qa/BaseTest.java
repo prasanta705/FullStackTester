@@ -39,6 +39,7 @@ public class BaseTest {
 	protected static Properties prop;
 	InputStream inputStream;
 	private static AppiumDriverLocalService server;
+	
 	public BaseTest() {
 
 		PageFactory.initElements(new AppiumFieldDecorator(driver), this);
@@ -46,6 +47,8 @@ public class BaseTest {
 
 	@BeforeSuite
 	@Parameters({"platformName", "udid", "deviceName"})
+
+	
 	public void setup(String platformName, String udid, String deviceName) throws AppiumServerHasNotBeenStartedLocallyException, Exception {
 		prop = new Properties();
 
@@ -72,7 +75,7 @@ public class BaseTest {
 			caps.setCapability(MobileCapabilityType.AUTOMATION_NAME, prop.getProperty("androidAutomationName"));
 			URL appURL = getClass().getClassLoader().getResource(prop.getProperty("androidAppLocation"));
 			caps.setCapability(MobileCapabilityType.APP,
-					"/Users/riyaanghosh/eclipse-workspace/MyTDDProject/src/test/resources/app/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk");
+					"C:\\Users\\PrasantaMukherjee\\git\\AppiumProject\\src\\test\\resources\\app\\Android.SauceLabs.Mobile.Sample.app.2.7.1.apk");
 			caps.setCapability("appPackage", prop.getProperty("androidAppPackage"));
 			caps.setCapability("appActivity", prop.getProperty("androidAppActivity"));
 			URL url = new URL(prop.getProperty("appiumURL"));
@@ -93,7 +96,6 @@ public class BaseTest {
 	public void clear(MobileElement e) {
 		waitForVisibility(e);
 		e.clear();
-
 	}
 
 	public void click(MobileElement e) {
@@ -120,7 +122,7 @@ public class BaseTest {
 	public MobileElement scrollToElement() {
 		return (MobileElement) ((FindsByAndroidUIAutomator) driver)
 				.findElementByAndroidUIAutomator("new UiScrollable(new UiSelector()"
-						+ ".scrollable(true)).scrollIntoView(" + "new UiSelector().description(\"test-Price\"));");
+						+ ".scrollable(true)).scrollIntoView(" + "new UiSelector().description(\"test-FINISH\"));");
 	}
 
 	public void closeApp() {
@@ -135,8 +137,6 @@ public class BaseTest {
 	public void tearDown() {
 
 	}
-	
-	
 	
 	public boolean checkIfAppiumServerIsRunnning(int port) throws Exception {
 	    boolean isAppiumServerRunning = false;

@@ -1,24 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]">
-  <test thread-count="5" name="Pixel_2(failed)">
-    <parameter name="platformName" value="Android"/>
-    <parameter name="udid" value="emulator-5554"/>
-    <parameter name="deviceName" value="Pixel_4"/>
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="platformName" value="Android"/>
+  <parameter name="udid" value="emulator-5554"/>
+  <parameter name="deviceName" value="Pixel_4"/>
+  <test thread-count="5" name="Pixel_4(failed)">
     <classes>
-      <class name="com.qa.tests.LoginTests">
+      <class name="com.qa.tests.Scenario1">
         <methods>
-          <include name="beforeMethod"/>
-          <include name="invalidUserName"/>
-          <include name="beforeClass"/>
-          <include name="setup"/>
+          <include name="Scenario1_Test"/>
           <include name="afterMethod"/>
-          <include name="invalidPassword"/>
-          <include name="successfulLogin"/>
           <include name="afterClass"/>
+          <include name="setup"/>
+          <include name="afterSuite"/>
+          <include name="beforeMethod"/>
           <include name="tearDown"/>
+          <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.qa.tests.LoginTests -->
+      </class> <!-- com.qa.tests.Scenario1 -->
     </classes>
-  </test> <!-- Pixel_2(failed) -->
+  </test> <!-- Pixel_4(failed) -->
 </suite> <!-- Failed suite [Suite] -->
