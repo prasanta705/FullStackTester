@@ -29,6 +29,7 @@ public class Scenario1 extends BaseTest {
 	ChkOutInfoPage chkoutInfoPage;
 	OverviewPage overviewPage;
 	ConfirmationPage confirmationpage;
+	
 	InputStream details;
 	JSONObject loginUsers;
 
