@@ -45,20 +45,21 @@ public class Scenario1 extends BaseTest {
 	@BeforeMethod
 	public void beforeMethod(Method m) {
 		System.out.println("\n" + "****** starting test:" + m.getName() + "******" + "\n");
+		
+		loginPage = new LoginPage();
+		productsPage = new ProductsPage();
+		chkoutInfoPage = new ChkOutInfoPage();
+		yourcartPage = new YourCartPage();
+		overviewPage = new OverviewPage();
+		confirmationpage = new ConfirmationPage();
 
 	}
 
 	
 	@Test
 	public void Scenario1_Test() {
-		
-		loginPage = new LoginPage();
-		//productsPage = new ProductsPage();
-		//chkoutInfoPage = new ChkOutInfoPage();
-		//yourcartPage = new YourCartPage();
-		//overviewPage = new OverviewPage();
-		//confirmationpage = new ConfirmationPage();
 
+		
 		loginPage.enterUserName(loginUsers.getJSONObject("User").getString("username"));
 		loginPage.enterPassword(loginUsers.getJSONObject("User").getString("password"));
 		loginPage.pressLoginBtn();
