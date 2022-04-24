@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-04-24T13:46:06 IST" name="Suite" finished-at="2022-04-24T13:46:16 IST" duration-ms="9532">
+  <suite started-at="2022-04-24T15:12:33 IST" name="Suite" finished-at="2022-04-24T15:12:35 IST" duration-ms="2654">
     <groups>
     </groups>
-    <test started-at="2022-04-24T13:46:06 IST" name="Pixel_4" finished-at="2022-04-24T13:46:16 IST" duration-ms="9532">
+    <test started-at="2022-04-24T15:12:33 IST" name="Pixel_4" finished-at="2022-04-24T15:12:35 IST" duration-ms="2654">
       <class name="com.qa.tests.Scenario1">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qa.tests.Scenario1@14028087]" started-at="2022-04-24T13:45:23 IST" name="setup" finished-at="2022-04-24T13:46:06 IST" duration-ms="43370" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qa.tests.Scenario1@14028087]" started-at="2022-04-24T15:12:20 IST" name="setup" finished-at="2022-04-24T15:12:33 IST" duration-ms="12973" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -28,11 +28,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.qa.tests.Scenario1@14028087]" started-at="2022-04-24T13:46:06 IST" name="beforeClass" finished-at="2022-04-24T13:46:16 IST" duration-ms="9423" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.qa.tests.Scenario1@14028087]" started-at="2022-04-24T15:12:33 IST" name="beforeClass" finished-at="2022-04-24T15:12:35 IST" duration-ms="2573" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.qa.tests.Scenario1@14028087]" started-at="2022-04-24T13:46:16 IST" name="beforeMethod" finished-at="2022-04-24T13:46:16 IST" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.qa.tests.Scenario1@14028087]" started-at="2022-04-24T15:12:35 IST" name="beforeMethod" finished-at="2022-04-24T15:12:35 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -43,14 +43,14 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="Scenario1_Test()[pri:0, instance:com.qa.tests.Scenario1@14028087]" started-at="2022-04-24T13:46:16 IST" name="Scenario1_Test" finished-at="2022-04-24T13:46:16 IST" duration-ms="14" status="FAIL">
+        <test-method signature="Scenario1_Test()[pri:0, instance:com.qa.tests.Scenario1@14028087]" started-at="2022-04-24T15:12:35 IST" name="Scenario1_Test" finished-at="2022-04-24T15:12:35 IST" duration-ms="7" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <message>
               <![CDATA[Cannot invoke "com.Pages.LoginPage.enterUserName(String)" because "this.loginPage" is null]]>
             </message>
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException: Cannot invoke "com.Pages.LoginPage.enterUserName(String)" because "this.loginPage" is null
-at com.qa.tests.Scenario1.Scenario1_Test(Scenario1.java:53)
+at com.qa.tests.Scenario1.Scenario1_Test(Scenario1.java:62)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -85,22 +85,22 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Scenario1_Test -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.qa.tests.Scenario1@14028087]" started-at="2022-04-24T13:46:16 IST" name="afterMethod" finished-at="2022-04-24T13:46:16 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.qa.tests.Scenario1@14028087]" started-at="2022-04-24T15:12:35 IST" name="afterMethod" finished-at="2022-04-24T15:12:35 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.qa.tests.Scenario1@14028087]" started-at="2022-04-24T13:46:16 IST" name="afterClass" finished-at="2022-04-24T13:46:16 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.qa.tests.Scenario1@14028087]" started-at="2022-04-24T15:12:35 IST" name="afterClass" finished-at="2022-04-24T15:12:35 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.qa.tests.Scenario1@14028087]" started-at="2022-04-24T13:46:16 IST" name="afterSuite" finished-at="2022-04-24T13:46:16 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterSuite -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.tests.Scenario1@14028087]" started-at="2022-04-24T13:46:16 IST" name="tearDown" finished-at="2022-04-24T13:46:16 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.tests.Scenario1@14028087]" started-at="2022-04-24T15:12:35 IST" name="tearDown" finished-at="2022-04-24T15:12:35 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.qa.tests.Scenario1@14028087]" started-at="2022-04-24T15:12:35 IST" name="afterSuite" finished-at="2022-04-24T15:12:35 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
       </class> <!-- com.qa.tests.Scenario1 -->
     </test> <!-- Pixel_4 -->
   </suite> <!-- Suite -->
