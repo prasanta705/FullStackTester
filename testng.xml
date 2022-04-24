@@ -9,4 +9,4 @@
 			<class name="com.qa.tests.Scenario1" />
 		</classes>
 	</test>
-</suite> <!-- Suite -->
+</suite>

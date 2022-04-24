@@ -19,8 +19,10 @@ import java.util.Map;
 
 import org.json.JSONObject;
 import org.json.JSONTokener;
+import org.openqa.selenium.support.PageFactory;
 
 public class Scenario1 extends BaseTest {
+	
 	LoginPage loginPage;
 	ProductsPage productsPage;
 	YourCartPage yourcartPage;
@@ -43,12 +45,13 @@ public class Scenario1 extends BaseTest {
 	@BeforeMethod
 	public void beforeMethod(Method m) {
 		System.out.println("\n" + "****** starting test:" + m.getName() + "******" + "\n");
-		loginPage = new LoginPage();
+		
 	}
 
 	
 	@Test
 	public void Scenario1_Test() {
+		
 		loginPage.enterUserName(loginUsers.getJSONObject("User").getString("username"));
 		loginPage.enterPassword(loginUsers.getJSONObject("User").getString("password"));
 		loginPage.pressLoginBtn();

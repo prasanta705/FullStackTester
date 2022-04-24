@@ -48,15 +48,13 @@ public class BaseTest {
 	@BeforeSuite
 	@Parameters({"platformName", "udid", "deviceName"})
 
-	
 	public void setup(String platformName, String udid, String deviceName) throws AppiumServerHasNotBeenStartedLocallyException, Exception {
 		prop = new Properties();
 
 		inputStream = getClass().getClassLoader().getResourceAsStream("config.properties");
 		
 		
-		server = getAppiumService(); // -> If using Mac, uncomment this statement and comment below statement
-		//server = getAppiumServerDefault(); // -> If using Windows, uncomment this statement and comment above statement
+		server = getAppiumServerDefault();
 		if(!checkIfAppiumServerIsRunnning(4723)) {
 			server.start();
 			server.clearOutPutStreams(); // -> Comment this if you don't want to see server logs in the console
@@ -165,36 +163,5 @@ public class BaseTest {
 	public AppiumDriverLocalService getAppiumServerDefault() {
 		return AppiumDriverLocalService.buildDefaultService();
 	}
-
-	// for Mac. Update the paths as per your Mac setup
-	public AppiumDriverLocalService getAppiumService() {
-		HashMap<String, String> environment = new HashMap<String, String>();
-		environment.put("PATH", "/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/bin:/Users/riyaanghosh/Library/Android/sdk/tools:/Users/riyaanghosh/Library/Android/sdk/platform-tools:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin" + System.getenv("PATH"));
-		environment.put("ANDROID_HOME", "/Users/riyaanghosh/Library/Android/sdk");
-		return AppiumDriverLocalService.buildService(new AppiumServiceBuilder()
-				.usingDriverExecutable(new File("/usr/local/bin/node"))
-				.withAppiumJS(new File("/usr/local/lib/node_modules/appium/build/lib/main.js"))
-				.usingPort(4723)
-				.withArgument(GeneralServerFlag.SESSION_OVERRIDE)
-//				.withArgument(() -> "--allow-insecure","chromedriver_autodownload")
-				.withEnvironment(environment)
-				.withLogFile(new File("ServerLogs/server.log")));
-	}
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
 }
