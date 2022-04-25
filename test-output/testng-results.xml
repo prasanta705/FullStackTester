@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-04-25T08:36:45 IST" name="Suite" finished-at="2022-04-25T08:36:49 IST" duration-ms="4188">
+  <suite started-at="2022-04-25T09:25:37 IST" name="Suite" finished-at="2022-04-25T09:25:40 IST" duration-ms="3292">
     <groups>
     </groups>
-    <test started-at="2022-04-25T08:36:45 IST" name="Pixel_4" finished-at="2022-04-25T08:36:49 IST" duration-ms="4188">
+    <test started-at="2022-04-25T09:25:37 IST" name="Pixel_4" finished-at="2022-04-25T09:25:40 IST" duration-ms="3292">
       <class name="com.qa.tests.Scenario1">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qa.tests.Scenario1@5386659f]" started-at="2022-04-25T08:36:17 IST" name="setup" finished-at="2022-04-25T08:36:45 IST" duration-ms="27344" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qa.tests.Scenario1@4c60d6e9]" started-at="2022-04-25T09:25:19 IST" name="setup" finished-at="2022-04-25T09:25:37 IST" duration-ms="17430" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -28,11 +28,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.qa.tests.Scenario1@5386659f]" started-at="2022-04-25T08:36:45 IST" name="beforeClass" finished-at="2022-04-25T08:36:49 IST" duration-ms="4059" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.qa.tests.Scenario1@4c60d6e9]" started-at="2022-04-25T09:25:37 IST" name="beforeClass" finished-at="2022-04-25T09:25:40 IST" duration-ms="3115" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.qa.tests.Scenario1@5386659f]" started-at="2022-04-25T08:36:49 IST" name="beforeMethod" finished-at="2022-04-25T08:36:49 IST" duration-ms="35" status="FAIL">
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.qa.tests.Scenario1@4c60d6e9]" started-at="2022-04-25T09:25:40 IST" name="beforeMethod" finished-at="2022-04-25T09:25:40 IST" duration-ms="23" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -104,7 +104,7 @@ at io.appium.java_client.pagefactory.bys.builder.AppiumByBuilder.prepareAnnotati
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="Scenario1_Test()[pri:0, instance:com.qa.tests.Scenario1@5386659f]" started-at="2022-04-25T08:36:49 IST" name="Scenario1_Test" finished-at="2022-04-25T08:36:49 IST" duration-ms="0" status="SKIP">
+        <test-method signature="Scenario1_Test()[pri:0, instance:com.qa.tests.Scenario1@4c60d6e9]" started-at="2022-04-25T09:25:40 IST" name="Scenario1_Test" finished-at="2022-04-25T09:25:40 IST" duration-ms="0" status="SKIP">
           <exception class="java.lang.RuntimeException">
             <message>
               <![CDATA[java.lang.NoSuchMethodException: jdk.proxy2.$Proxy14.proxyClassLookup()]]>
@@ -169,22 +169,22 @@ at io.appium.java_client.pagefactory.bys.builder.AppiumByBuilder.prepareAnnotati
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Scenario1_Test -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.qa.tests.Scenario1@5386659f]" started-at="2022-04-25T08:36:49 IST" name="afterMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1650856009246" status="SKIP">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.qa.tests.Scenario1@4c60d6e9]" started-at="2022-04-25T09:25:40 IST" name="afterMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1650858940411" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.qa.tests.Scenario1@5386659f]" started-at="2022-04-25T08:36:49 IST" name="afterClass" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1650856009258" status="SKIP">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.qa.tests.Scenario1@4c60d6e9]" started-at="2022-04-25T09:25:40 IST" name="afterClass" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1650858940417" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.tests.Scenario1@5386659f]" started-at="2022-04-25T08:36:49 IST" name="tearDown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1650856009447" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.qa.tests.Scenario1@5386659f]" started-at="2022-04-25T08:36:49 IST" name="afterSuite" finished-at="2022-04-25T08:36:49 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.qa.tests.Scenario1@4c60d6e9]" started-at="2022-04-25T09:25:40 IST" name="afterSuite" finished-at="2022-04-25T09:25:40 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.tests.Scenario1@4c60d6e9]" started-at="2022-04-25T09:25:40 IST" name="tearDown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1650858940686" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- com.qa.tests.Scenario1 -->
     </test> <!-- Pixel_4 -->
   </suite> <!-- Suite -->
