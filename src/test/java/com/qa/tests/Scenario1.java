@@ -60,7 +60,6 @@ public class Scenario1 extends BaseTest {
 	@Test
 	public void Scenario1_Test() {
 
-		
 		loginPage.enterUserName(loginUsers.getJSONObject("User").getString("username"));
 		loginPage.enterPassword(loginUsers.getJSONObject("User").getString("password"));
 		loginPage.pressLoginBtn();
