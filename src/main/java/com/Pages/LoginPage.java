@@ -4,7 +4,7 @@ import com.qa.BaseTest;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 
-public class LoginPage extends BaseTest {
+public class LoginPage {
 
 	@AndroidFindBy(accessibility = "test-Username")
 	public MobileElement usernameTxtFld;
@@ -16,17 +16,17 @@ public class LoginPage extends BaseTest {
 	public MobileElement loginBtn;
 
 	public void enterUserName(String username) {
-		clear(usernameTxtFld);
-		sendKeys(usernameTxtFld, username);
+		usernameTxtFld.clear();
+		usernameTxtFld.sendKeys(username);
 	}
 
 	public void enterPassword(String password) {
-		clear(passwordTxtFld);
-		sendKeys(passwordTxtFld, password);
+		passwordTxtFld.clear();
+		passwordTxtFld.sendKeys(password);
 	}
 
 	public void pressLoginBtn() {
-		click(loginBtn );
+		loginBtn.click();;
 	}
 	
 }

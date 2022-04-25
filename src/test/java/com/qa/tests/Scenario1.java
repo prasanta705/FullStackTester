@@ -19,16 +19,11 @@ import java.util.Map;
 
 import org.json.JSONObject;
 import org.json.JSONTokener;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
 public class Scenario1 extends BaseTest {
 	
-	LoginPage loginPage;
-	ProductsPage productsPage;
-	YourCartPage yourcartPage;
-	ChkOutInfoPage chkoutInfoPage;
-	OverviewPage overviewPage;
-	ConfirmationPage confirmationpage;
 	
 	InputStream details;
 	JSONObject loginUsers;
@@ -46,53 +41,22 @@ public class Scenario1 extends BaseTest {
 	@BeforeMethod
 	public void beforeMethod(Method m) {
 		System.out.println("\n" + "****** starting test:" + m.getName() + "******" + "\n");
-		
-		loginPage = new LoginPage();
-		productsPage = new ProductsPage();
-		chkoutInfoPage = new ChkOutInfoPage();
-		yourcartPage = new YourCartPage();
-		overviewPage = new OverviewPage();
-		confirmationpage = new ConfirmationPage();
 
 	}
 
 	
 	@Test
 	public void Scenario1_Test() {
+		
+		LaunchPage loginPage = PageFactory.initElements(getDriver(), LoginPage.class);
 	
 		loginPage.enterUserName(loginUsers.getJSONObject("User").getString("username"));
 		loginPage.enterPassword(loginUsers.getJSONObject("User").getString("password"));
 		loginPage.pressLoginBtn();
 
-		String actualProductTitle = productsPage.getTitle();
-		String expectedProductTitle = "PRODUCTS";
-
-		Assert.assertEquals(actualProductTitle, expectedProductTitle);
-		
-		productsPage.clickAddToCart();
-		
-		productsPage.clickCart();
-		
-		yourcartPage.clickCheckOut();
-		
-		Map<String, String> customerDetails = new HashMap<String, String>();
-		
-		customerDetails.put("Firstname", "abc");
-		customerDetails.put("Lastname", "def");
-		customerDetails.put("Postalcode", "400087");
-		
-		chkoutInfoPage.Checkout(customerDetails);
-
-		overviewPage.scrollToFinishButton();
-		
-		overviewPage.clickFinish();
-		
-		String actualConfirmationText = confirmationpage.confirmationMsg.getText();
-		String expectedConfirmationText = "THANK YOU FOR YOU ORDER";
-
-		Assert.assertEquals(actualConfirmationText, expectedConfirmationText);
 	
 	}
+
 
 	@AfterClass
 	public void afterClass() throws IOException {
