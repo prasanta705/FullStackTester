@@ -42,7 +42,7 @@ public class Scenario1 extends BaseTest {
 	public void beforeMethod(Method m) {
 		System.out.println("\n" + "****** starting test:" + m.getName() + "******" + "\n");
 
-		LoginPage loginPage = new LoginPage();
+		loginPage = new LoginPage();
 
 	}
 
