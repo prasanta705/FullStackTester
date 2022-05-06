@@ -14,7 +14,13 @@ public class ProductsPage extends BaseTest{
 	@AndroidFindBy (xpath = "(//android.view.ViewGroup[@content-desc=\"test-ADD TO CART\"])[1]")
 	public MobileElement addToCart;
 	
-	@AndroidFindBy (xpath = "//android.view.ViewGroup[@content-desc=\"test-Cart\"]/android.view.ViewGroup/android.view.ViewGroup")
+	@AndroidFindBy (xpath = "(//android.view.ViewGroup[@content-desc=\"test-REMOVE\"]")
+	public MobileElement removeCart;
+	
+	@AndroidFindBy (xpath = "(//android.view.ViewGroup[@content-desc=\"test-ADD TO CART\"])[2]")
+	public MobileElement addToCartItem2;
+	
+	@AndroidFindBy (xpath = "//android.view.ViewGroup[@content-desc=\"test-Cart\"]/android.view.ViewGroup/android.widget.TextView")
 	public MobileElement clickCart;
 	
 	
@@ -25,6 +31,14 @@ public class ProductsPage extends BaseTest{
 
 	public void clickAddToCart() {
 		click(addToCart);
+	}
+	
+	public void clickRemoveFromCart() {
+		click(removeCart);
+	}
+	
+	public void clickAddToCartItem2() {
+		click(addToCartItem2);
 	}
 
 	public void clickCart() {
