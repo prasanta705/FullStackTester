@@ -8,7 +8,7 @@ import io.appium.java_client.pagefactory.AndroidFindBy;
 public class YourCartPage extends BaseTest{
 	TestUtils utils = new TestUtils();
 	
-	@AndroidFindBy (xpath = "//android.view.ViewGroup[@content-desc=\"test-CHECKOUT\"]")
+	@AndroidFindBy(accessibility = "test-CHECKOUT")
 	public MobileElement checkOut;
 	
 

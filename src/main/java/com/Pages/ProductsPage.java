@@ -14,7 +14,7 @@ public class ProductsPage extends BaseTest{
 	@AndroidFindBy (xpath = "(//android.view.ViewGroup[@content-desc=\"test-ADD TO CART\"])[1]")
 	public MobileElement addToCart;
 	
-	@AndroidFindBy (xpath = "(//android.view.ViewGroup[@content-desc=\"test-Cart\"]/android.view.ViewGroup/android.widget.ImageView")
+	@AndroidFindBy (xpath = "//android.view.ViewGroup[@content-desc=\"test-Cart\"]/android.view.ViewGroup/android.view.ViewGroup")
 	public MobileElement clickCart;
 	
 	

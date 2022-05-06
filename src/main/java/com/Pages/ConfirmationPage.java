@@ -12,7 +12,5 @@ public class ConfirmationPage extends BaseTest{
 	@AndroidFindBy (xpath = "//android.widget.ScrollView[@content-desc=\"test-CHECKOUT: COMPLETE!\"]/android.view.ViewGroup/android.widget.TextView[1]")
 	public MobileElement confirmationMsg;
 	
-	
-
 
 }
